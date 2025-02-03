@@ -2,17 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom transitions */
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.3s ease;
+/* Custom responsive styles */
+@layer utilities {
+  .container {
+    @apply px-4 mx-auto;
+    max-width: 1280px;
+  }
+  
+  @screen sm {
+    .container {
+      @apply px-6;
+    }
+  }
+  
+  @screen lg {
+    .container {
+      @apply px-8;
+    }
+  }
 }
 
-.page-enter-from,
-.page-leave-to {
+/* Animations */
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(100%);
   opacity: 0;
 }
 
+/* Mobile sidebar */
 .sidebar-enter-active,
 .sidebar-leave-active {
   transition: transform 0.3s ease;

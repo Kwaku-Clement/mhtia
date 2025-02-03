@@ -1,47 +1,18 @@
 {
+  // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
     "strict": true,
-    "jsx": "preserve",
-    "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
       "~/*": ["./*"],
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "stores/*": ["./stores/*"]
     },
-    "types": [
-      "@pinia/nuxt",
-      "@nuxtjs/tailwindcss",
-      "nuxt"
-    ]
+    "types": ["@nuxt/types", "@pinia/nuxt", "@nuxtjs/tailwindcss"]
   },
-  "include": [
-    "components/**/*.ts",
-    "components/**/*.d.ts",
-    "components/**/*.tsx",
-    "components/**/*.vue",
-    "layouts/**/*.ts",
-    "layouts/**/*.d.ts",
-    "layouts/**/*.tsx",
-    "layouts/**/*.vue",
-    "pages/**/*.ts",
-    "pages/**/*.d.ts",
-    "pages/**/*.tsx",
-    "pages/**/*.vue",
-    "stores/**/*.ts",
-    "stores/**/*.d.ts",
-    "stores/**/*.tsx",
-    "stores/**/*.vue",
-    "nuxt.config.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    ".nuxt",
-    "dist"
-  ]
+  "include": ["./**/*.ts", "./**/*.d.ts", "./**/*.tsx", "./**/*.vue"],
+  "exclude": ["node_modules", ".nuxt", "dist"]
 }
+

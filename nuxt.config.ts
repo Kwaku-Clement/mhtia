@@ -1,36 +1,28 @@
-import { defineNuxtConfig } from 'nuxt/config'
+import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
-  modules: [
-    '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
-  ],
-
-  css: [
-    '~/assets/css/tailwind.css',
-  ],
-
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/icon", "@pinia/nuxt", "@vueuse/nuxt"],
+  css: ["~/assets/css/tailwind.css"],
 
   app: {
     head: {
-      title: 'Methodist Health Training Institute',
+      title: "SCH Port Terminal",
       meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'Methodist Health Training Institute, MHTI' },
-        { name: 'format-detection', content: 'telephone=no' },
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          name: "description",
+          content: "SCH Port Terminal - South Coast's leading port terminal operators",
+        },
       ],
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      ],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
 
-  compatibilityDate: '2025-01-31',
-})
+  typescript: {
+    strict: true,
+    typeCheck: true,
+  },
+
+  compatibilityDate: "2025-02-03",
+});
