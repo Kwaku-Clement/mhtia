@@ -1,13 +1,10 @@
 <template>
     <header class="bg-white shadow-md">
-      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <NuxtLink to="/" class="flex items-center">
-          <img src="/images/logo.png" alt="SCH Logo" class="h-12 w-auto" />
-        </NuxtLink>
+      <div class="container bg-blue-600 mx-auto px-4 py-4 flex justify-between items-center">
         
         <nav class="hidden md:flex space-x-6">
           <NuxtLink v-for="item in menuItems" :key="item.path" :to="item.path" 
-                    class="text-gray-600 hover:text-primary transition-colors">
+                    class="text-white hover:text-red-300 transition-colors">
             {{ item.label }}
           </NuxtLink>
         </nav>
@@ -26,11 +23,10 @@
   const isMobileMenuOpen = ref(false)
   
   const menuItems = [
-    { label: 'Home', path: '/' },
-    { label: 'Services', path: '/#services' },
-    { label: 'News', path: '/#news' },
+    { label: 'Student Portal', path: '/' },
+    { label: 'Staff Portal', path: '/#services' },
+    { label: 'Alumni', path: '/#news' },
     { label: 'Careers', path: '/#careers' },
-    { label: 'Contact', path: '/contact' }
   ]
   </script>
   

@@ -29,8 +29,16 @@
   
   <script setup>
   const slides = ref([
-    {
+  {
       image: '/images/port-night.jpg',
+      title: 'SCH on Par with special service for Azamara guests',
+      description: 'Working together insights with care is essential for success. We provide a special experience for Azamara that allows for seamless transitions to Southampton...'
+    },    {
+      image: '/images/forklift.jpg',
+      title: 'SCH on Par with special service for Azamara guests',
+      description: 'Working together insights with care is essential for success. We provide a special experience for Azamara that allows for seamless transitions to Southampton...'
+    },    {
+      image: '/images/career.jpg',
       title: 'SCH on Par with special service for Azamara guests',
       description: 'Working together insights with care is essential for success. We provide a special experience for Azamara that allows for seamless transitions to Southampton...'
     },

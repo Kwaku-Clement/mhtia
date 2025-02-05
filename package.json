@@ -30,6 +30,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "@vueuse/core": "^10.7.0",
     "@vueuse/nuxt": "^10.7.0",
+    "gsap": "^3.12.7",
     "lucide-vue-next": "^0.294.0",
     "pinia": "^2.1.7",
     "swiper": "^11.0.5",

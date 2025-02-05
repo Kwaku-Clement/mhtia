@@ -1,7 +1,9 @@
 <template>
+    <div class="max-w-screen-xl mx-auto">
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
+  </div>
 </template>
 
 <style>
