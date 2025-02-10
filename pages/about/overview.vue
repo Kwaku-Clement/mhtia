@@ -4,23 +4,21 @@
     <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
       <div class="bg-gradient-to-r from-cyan-500 to-blue-600 p-6">
         <h1 class="text-4xl font-bold text-white mb-4 animate-fade-in">
-          Company Overview
+          College Overview
         </h1>
       </div>
       <div class="p-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="space-y-6">
             <h2 class="text-2xl font-semibold text-gray-900">
-              Who We Are
+              About Our College
             </h2>
             <p class="text-gray-600 leading-relaxed">
-              We are a pioneering technology company dedicated to creating innovative solutions 
-              that drive digital transformation across industries. With a commitment to excellence 
-              and customer success, we've been at the forefront of technological advancement.
+              We are dedicated to providing a comprehensive education that prepares students for successful careers and meaningful lives. Our commitment to excellence is reflected in our diverse academic programs and supportive campus environment.
             </p>
             <div class="grid grid-cols-2 gap-4">
-              <div 
-                v-for="(stat, index) in companyStats" 
+              <div
+                v-for="(stat, index) in collegeStats"
                 :key="index"
                 class="bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors"
               >
@@ -37,8 +35,8 @@
             <h2 class="text-2xl font-semibold text-gray-900">
               Our Impact
             </h2>
-            <div 
-              v-for="(impact, index) in companyImpacts" 
+            <div
+              v-for="(impact, index) in collegeImpacts"
               :key="index"
               class="bg-white border border-gray-100 rounded-lg p-4 flex items-center space-x-4 hover:shadow-md transition-shadow"
             >
@@ -59,34 +57,34 @@
 
 <script setup>
 import { ref } from 'vue'
-import { 
-  Users, 
-  Globe, 
-  TrendingUp, 
-  Award 
-} from 'lucide-react'
+import {
+  Users,
+  Globe,
+  TrendingUp,
+  Award
+} from 'lucide-vue-next'
 import AboutTabs from '~/components/tabs/AboutTabs.vue'
 
-const companyStats = ref([
-  { value: '1000+', label: 'Global Customers' },
-  { value: '200%', label: 'Annual Growth' }
+const collegeStats = ref([
+  { value: '5000+', label: 'Students Enrolled' },
+  { value: '95%', label: 'Graduation Rate' }
 ])
 
-const companyImpacts = ref([
+const collegeImpacts = ref([
   {
     icon: Users,
-    title: 'Customer Reach',
-    description: 'Serving clients across 50+ countries'
+    title: 'Student Success',
+    description: 'High graduation rates and successful alumni'
   },
   {
     icon: Globe,
-    title: 'Global Presence',
-    description: 'Offices in 5 continents'
+    title: 'Global Reach',
+    description: 'International partnerships and study abroad programs'
   },
   {
     icon: TrendingUp,
-    title: 'Innovation',
-    description: '15+ patents filed'
+    title: 'Research Excellence',
+    description: 'Numerous research publications and grants'
   }
 ])
 </script>

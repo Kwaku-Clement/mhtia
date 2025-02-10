@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-50">
+  <div class="container mx-auto px-4 py-8">
     <AdmissionTabs />
     <div class="container mx-auto px-4 py-8">
       <h1 class="text-4xl font-bold text-primary mb-6 animate-fade-in">International Students Admission</h1>

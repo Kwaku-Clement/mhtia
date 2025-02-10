@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container mx-auto px-4 py-8">
     <AcademicsTabs />
     <div class="bg-white rounded-lg shadow p-6">
       <h1 class="text-3xl font-bold text-gray-900 mb-6">Welcome to Academics</h1>

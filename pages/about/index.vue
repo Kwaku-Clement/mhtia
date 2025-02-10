@@ -3,37 +3,36 @@
     <AboutTabs />
     <div class="bg-gradient-to-br from-white to-blue-50 rounded-2xl shadow-lg overflow-hidden">
       <div class="p-8 text-center">
-        <h1 
+        <h1
           class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-6 animate-bounce-in"
         >
-          Welcome to Our Story
+          Welcome to Our College
         </h1>
-        <p 
+        <p
           class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed animate-fade-in"
         >
-          Discover the passion, innovation, and commitment that drive us to create 
-          remarkable solutions that transform industries and improve lives.
+          Discover our commitment to academic excellence, innovation, and student success. Join us on a journey of learning and growth.
         </p>
-        
+
         <div class="mt-8 flex justify-center space-x-4">
-          <button 
+          <button
             @click="scrollToSection('mission')"
             class="px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors"
           >
             Our Mission
           </button>
-          <button 
+          <button
             @click="scrollToSection('team')"
             class="px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors"
           >
-            Meet Our Team
+            Meet Our Faculty
           </button>
         </div>
       </div>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-8 bg-gray-50">
-        <div 
-          v-for="(feature, index) in landingFeatures" 
+        <div
+          v-for="(feature, index) in landingFeatures"
           :key="index"
           class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
         >
@@ -50,28 +49,28 @@
 
 <script setup>
 import { ref } from 'vue'
-import { 
-  LightBulb, 
-  Globe, 
-  Trophy 
-} from 'lucide-react'
+import {
+  BookOpen,
+  Globe,
+  Trophy
+} from 'lucide-vue-next'
 import AboutTabs from '~/components/tabs/AboutTabs.vue'
 
 const landingFeatures = ref([
   {
-    icon: LightBulb,
-    title: 'Innovation',
-    description: 'Driving change through creative solutions and cutting-edge technologies.'
+    icon: BookOpen,
+    title: 'Academic Excellence',
+    description: 'Providing high-quality education and research opportunities.'
   },
   {
     icon: Globe,
-    title: 'Global Reach',
-    description: 'Serving clients across continents with localized, personalized support.'
+    title: 'Global Education',
+    description: 'Offering international programs and exchange opportunities.'
   },
   {
     icon: Trophy,
-    title: 'Excellence',
-    description: 'Committed to delivering exceptional quality and continuous improvement.'
+    title: 'Student Success',
+    description: 'Supporting students in achieving their academic and career goals.'
   }
 ])
 

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sticky top-0 z-30 bg-white/80 backdrop-blur-sm shadow-lg transition-all duration-300"
+    class="sticky top-16 z-30 bg-white/80 backdrop-blur-sm shadow-lg transition-all duration-500 ease-in-out"
     :class="{
       'shadow-xl': isScrolled,
       'py-4': !isScrolled,
@@ -13,7 +13,7 @@
           v-for="tab in tabs"
           :key="tab.path"
           :to="tab.path"
-          class="relative px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-300
+          class="relative px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-500 ease-in-out
                  hover:scale-105 active:scale-95 group"
           :class="[
             $route.path === tab.path
@@ -24,7 +24,7 @@
           {{ tab.name }}
           <span
             class="absolute inset-0 rounded-lg bg-gradient-to-r from-primary-light to-primary-dark opacity-0
-                   group-hover:opacity-10 transition-opacity duration-300"
+                   group-hover:opacity-10 transition-opacity duration-500 ease-in-out"
           ></span>
         </NuxtLink>
       </div>

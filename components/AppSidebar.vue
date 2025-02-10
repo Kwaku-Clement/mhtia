@@ -1,32 +1,31 @@
-<!-- components/SidebarNav.vue -->
 <template>
-  <aside 
-    class="bg-[#1E2B7B] text-white h-screen fixed left-0 top-0 transition-all duration-300"
+  <aside
+    class="bg-[#1E2B7B] text-white h-screen fixed left-0 top-0 transition-all duration-500 ease-in-out"
     :class="[isExpanded ? 'w-64' : 'w-20']"
   >
     <div class="p-6">
       <!-- Logo -->
-      <div 
-        class="transition-all duration-300 mb-8"
+      <div
+        class="transition-all duration-500 ease-in-out mb-8"
         :class="[isExpanded ? 'w-32' : 'w-8']"
       >
-        <img 
-          src="/images/logo.png" 
-          alt="SCH Logo" 
-          class="w-full transition-transform duration-300 hover:scale-105"
+        <img
+          src="/images/logo.png"
+          alt="SCH Logo"
+          class="w-full transition-transform duration-500 ease-in-out hover:scale-105"
         />
       </div>
 
       <!-- Toggle Button -->
       <button
         @click="isExpanded = !isExpanded"
-        class="absolute top-4 -right-3 bg-white text-[#1E2B7B] rounded-full p-1 
-               shadow-lg transform transition-transform duration-300 
+        class="absolute top-4 -right-3 bg-white text-[#1E2B7B] rounded-full p-1
+               shadow-lg transform transition-transform duration-500 ease-in-out
                hover:scale-110 active:scale-95"
       >
-        <Icon 
-          name="heroicons:chevron-left" 
-          class="w-4 h-4 transition-transform duration-300"
+        <Icon
+          name="heroicons:chevron-left"
+          class="w-4 h-4 transition-transform duration-500 ease-in-out"
           :class="{ 'rotate-180': !isExpanded }"
         />
       </button>
@@ -37,15 +36,15 @@
           v-for="item in menuItems"
           :key="item.path"
           :to="item.path"
-          class="flex items-center space-x-3 p-2 rounded-lg hover:bg-white/10 
-                 transition-all duration-300 transform hover:translate-x-2 group"
+          class="flex items-center space-x-3 p-2 rounded-lg hover:bg-white/10
+                 transition-all duration-500 ease-in-out transform hover:translate-x-2 group"
         >
-          <Icon 
-            :name="item.icon" 
-            class="w-5 h-5 transition-transform duration-300 group-hover:scale-110"
+          <Icon
+            :name="item.icon"
+            class="w-5 h-5 transition-transform duration-500 ease-in-out group-hover:scale-110"
           />
-          <span 
-            class="transition-all duration-300"
+          <span
+            class="transition-all duration-500 ease-in-out"
             :class="[isExpanded ? 'opacity-100' : 'opacity-0 w-0 overflow-hidden']"
           >
             {{ item.label }}

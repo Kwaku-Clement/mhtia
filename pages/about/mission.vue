@@ -10,15 +10,14 @@
       <div class="p-8">
         <div class="max-w-4xl mx-auto">
           <p class="text-2xl text-gray-700 text-center mb-12 leading-relaxed animate-slide-in">
-            To empower businesses through innovative solutions while maintaining the highest 
-            standards of sustainability, ethical practices, and human-centric technology.
+            To provide a transformative educational experience that empowers students to achieve their full potential, fostering a community of lifelong learners and responsible global citizens.
           </p>
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div 
-              v-for="(value, index) in coreValues" 
+            <div
+              v-for="(value, index) in coreValues"
               :key="index"
-              class="value-card transform transition-all duration-300 hover:scale-105"
+              class="bg-white p-6 rounded-xl shadow-md text-center border border-gray-100 transform transition-all duration-300 hover:scale-105"
             >
               <div class="text-5xl mb-4 text-green-500">
                 <component :is="value.icon" />
@@ -37,37 +36,33 @@
 
 <script setup>
 import { ref } from 'vue'
-import { 
-  Lightbulb, 
-  Leaf, 
-  Target 
-} from 'lucide-react'
+import {
+  BookOpen,
+  Leaf,
+  Target
+} from 'lucide-vue-next'
 import AboutTabs from '~/components/tabs/AboutTabs.vue'
 
 const coreValues = ref([
   {
-    icon: Lightbulb,
-    title: 'Innovation',
-    description: 'Continuously pushing boundaries and creating transformative solutions.'
+    icon: BookOpen,
+    title: 'Academic Excellence',
+    description: 'Promoting rigorous academic standards and innovative teaching methods.'
   },
   {
     icon: Leaf,
     title: 'Sustainability',
-    description: 'Committed to environmental responsibility and sustainable practices.'
+    description: 'Encouraging environmentally responsible practices and sustainable development.'
   },
   {
     icon: Target,
-    title: 'Excellence',
-    description: 'Delivering outstanding results with precision and dedication.'
+    title: 'Community Engagement',
+    description: 'Building strong relationships with local and global communities through service and collaboration.'
   }
 ])
 </script>
 
 <style scoped>
-.value-card {
-  @apply bg-white p-6 rounded-xl shadow-md text-center border border-gray-100 transition-all;
-}
-
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
