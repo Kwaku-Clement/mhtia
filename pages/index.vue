@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
   <div>
     <HeroSection />
@@ -5,6 +9,7 @@
     <NewsSlideshow />
     <OpportunitiesSection />
     <CaseStudiesSection />
+    <VideoShows />
   </div>
 </template>
 
