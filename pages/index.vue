@@ -5,11 +5,12 @@
 <template>
   <div>
     <HeroSection />
-    <ServicesSection />
+    <StudentLife />
     <NewsSlideshow />
     <OpportunitiesSection />
     <CaseStudiesSection />
     <VideoShows />
+    <ContactForm />
   </div>
 </template>
 

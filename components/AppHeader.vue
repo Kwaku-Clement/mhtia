@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-white shadow-md sticky top-0 z-40 transition-all duration-500 ease-in-out"
+    class="bg-white shadow-md top-0 z-40 transition-all duration-500 ease-in-out"
     :class="{
       'shadow-lg': isScrolled,
       'py-3': !isScrolled,
@@ -79,9 +79,9 @@ onUnmounted(() => {
 })
 
 const menuItems = [
-  { label: 'Student Portal', path: '/' },
-  { label: 'Staff Portal', path: '/#services' },
-  { label: 'Alumni', path: '/#news' },
-  { label: 'Careers', path: '/#careers' },
-]
+  { label: 'Student Portal', path: 'StudentPortal' },
+  { label: 'Staff Portal', path: '/StaffPortal' },
+  { label: 'Alumni', path: '/Alumni' },
+  { label: 'Careers', path: '/Careers' },
+];
 </script>

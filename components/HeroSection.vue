@@ -1,6 +1,6 @@
 <!-- components/HeroSlideshow.vue -->
 <template>
-  <section class="relative h-[600px] overflow-hidden">
+  <section class="relative h-[500px] overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-r from-primary to-transparent z-10"></div>
     
     <TransitionGroup 

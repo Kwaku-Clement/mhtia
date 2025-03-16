@@ -4,7 +4,7 @@
     <div class="absolute inset-0 w-full h-full p-4">
       <div class="relative w-full h-full rounded-2xl border-4 border-white shadow-2xl overflow-hidden">
         <video
-          class="w-full h-full object-cover"
+          class="w-full h-[110%] object-cover"
           autoplay
           loop
           muted

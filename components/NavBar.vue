@@ -37,6 +37,7 @@
               class="text-gray-700 hover:text-red-500 transition-all duration-500 ease-in-out
                      flex items-center transform hover:scale-105 active:scale-95
                      px-3 py-2 rounded-md hover:bg-red-50"
+              :class="{ 'bg-red-50 text-red-500 font-medium': isActivePath(item.path) }"
             >
               {{ item.label }}
             </NuxtLink>
@@ -47,6 +48,7 @@
               class="text-gray-700 hover:text-red-500 transition-all duration-500 ease-in-out
                      flex items-center transform hover:scale-105 active:scale-95
                      px-3 py-2 rounded-md hover:bg-red-50 group"
+              :class="{ 'bg-red-50 text-red-500 font-medium': isActiveParent(item) }"
             >
               {{ item.label }}
               <svg
@@ -73,6 +75,7 @@
                   :to="child.path"
                   class="block px-4 py-2.5 text-gray-700 hover:text-red-500 hover:bg-red-50
                          transition-all duration-500 ease-in-out transform hover:translate-x-2"
+                  :class="{ 'bg-red-50 text-red-500 font-medium': isActivePath(child.path) }"
                 >
                   {{ child.label }}
                 </NuxtLink>
@@ -122,6 +125,7 @@
               :to="item.path"
               class="block px-4 py-2.5 text-gray-700 hover:text-red-500 hover:bg-red-50
                      rounded-lg transition-all duration-500 ease-in-out"
+              :class="{ 'bg-red-50 text-red-500 font-medium': isActivePath(item.path) }"
               @click="isMobileMenuOpen = false"
             >
               {{ item.label }}
@@ -134,6 +138,7 @@
                 class="w-full px-4 py-2.5 text-left text-gray-700 hover:text-red-500
                        hover:bg-red-50 rounded-lg transition-all duration-500 ease-in-out flex justify-between
                        items-center"
+                :class="{ 'bg-red-50 text-red-500 font-medium': isActiveParent(item) }"
               >
                 {{ item.label }}
                 <svg
@@ -157,6 +162,7 @@
                   :to="child.path"
                   class="block px-4 py-2 text-gray-600 hover:text-red-500 hover:bg-red-50
                          rounded-lg transition-all duration-500 ease-in-out"
+                  :class="{ 'bg-red-50 text-red-500 font-medium': isActivePath(child.path) }"
                   @click="isMobileMenuOpen = false"
                 >
                   {{ child.label }}
@@ -171,8 +177,10 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
 const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
 const openMobileMenus = ref({})
@@ -185,6 +193,17 @@ const toggleMobileSubmenu = (index) => {
   openMobileMenus.value[index] = !openMobileMenus.value[index]
 }
 
+// Check if a path is active
+const isActivePath = (path) => {
+  return route.path === path
+}
+
+// Check if a parent menu item is active (when any of its children are active)
+const isActiveParent = (item) => {
+  if (!item.children) return false
+  return item.children.some(child => isActivePath(child.path))
+}
+
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
 })
@@ -194,6 +213,8 @@ onUnmounted(() => {
 })
 
 const menuItems = [
+{ label: 'Home', path: '/' },
+
   {
     label: 'About MHTIA',
     children: [
