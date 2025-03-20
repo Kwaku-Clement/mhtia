@@ -16,7 +16,7 @@
           :class="{ 'scale-90': isScrolled }"
         >
           <img
-            src="/images/logo.png"
+            src="/images/logo_top.png"
             alt="MHTIA Logo"
             class="h-12 w-auto transition-all duration-500 ease-in-out"
             :class="{ 'h-10': isScrolled }"

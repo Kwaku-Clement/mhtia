@@ -7,7 +7,7 @@
       'py-2': isScrolled
     }"
   >
-    <div class="container bg-blue-600 mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="container bg-blue-950 mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex space-x-6">
         <NuxtLink
@@ -44,7 +44,7 @@
       leave-from-class="max-h-96 opacity-100"
       leave-to-class="max-h-0 opacity-0"
     >
-      <nav v-if="isMobileMenuOpen" class="md:hidden bg-blue-600 px-4 py-2">
+      <nav v-if="isMobileMenuOpen" class="md:hidden bg-blue-950 px-4 py-2">
         <NuxtLink
           v-for="item in menuItems"
           :key="item.path"
@@ -79,7 +79,7 @@ onUnmounted(() => {
 })
 
 const menuItems = [
-  { label: 'Student Portal', path: 'StudentPortal' },
+  { label: 'Student Portal', path: '/StudentPortal' },
   { label: 'Staff Portal', path: '/StaffPortal' },
   { label: 'Alumni', path: '/Alumni' },
   { label: 'Careers', path: '/Careers' },

@@ -1,13 +1,13 @@
 <template>
     <div class="min-h-screen bg-gray-50">
       <!-- Hero Section -->
-      <section class="bg-blue-600 text-white py-16 transition-all duration-700 animate-fade-in">
+      <section class="bg-blue-950 text-white py-16 transition-all duration-700 animate-fade-in">
         <div class="container mx-auto px-4">
           <div class="flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-8 md:mb-0 transform transition-all duration-700 animate-slide-in-left">
               <h1 class="text-4xl md:text-5xl font-bold mb-4">Welcome to the Student Portal</h1>
-              <p class="text-xl mb-6">Your gateway to academic excellence and campus resources</p>
-              <a href="https://google.com" target="_blank" rel="noopener noreferrer" 
+              <p class="text-xl text-yellow-500 mb-6">Your gateway to academic excellence and campus resources</p>
+              <a href="https://portal.healthtraining.gov.gh/login" target="_blank" rel="noopener noreferrer" 
                 class="inline-block bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:rotate-1 animate-pulse-slow">
                 Access Student Portal →
               </a>
@@ -22,7 +22,7 @@
       <!-- Features Section -->
       <section class="py-16">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold text-center mb-12 text-gray-800 transform transition-all duration-500 animate-fade-in">Student Resources</h2>
+          <h2 class="text-3xl font-bold mb-12 text-red-900 border-b pb-2 transform transition-all duration-500 animate-fade-in">Student Resources</h2>
           
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Course Registration -->

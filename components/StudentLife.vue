@@ -1,8 +1,8 @@
 <template>
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-12 text-center text-blue-800">
-        College Student Services
+      <h2 class="text-3xl font-bold mb-12 text-center text-red-800 border-b pb-2 ">
+        Vision, Mission, and Core Values
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div 
@@ -21,11 +21,11 @@
               class="w-16 h-16 mb-6"
               :class="activeService === index ? 'text-white' : 'text-blue-600'"
             />
-            <h3 class="text-xl font-semibold mb-4">
+            <h3 class="text-xl font-bold mb-4">
               {{ service.title }}
             </h3>
             <p 
-              class="text-sm mb-4"
+              class="text-sm font-semibold mb-4"
               :class="activeService === index ? 'text-white/80' : 'text-gray-600'"
             >
               {{ service.description }}
@@ -60,41 +60,41 @@ const activeService = ref(null)
 
 const services = [
   {
-    icon: GraduationCap,
-    title: 'Academic Advising',
-    description: 'Personalized guidance for course selection, major planning, and academic success strategies.',
-    details: 'Expert advisors help students navigate academic requirements, explore majors, and develop comprehensive four-year academic plans.'
-  },
-  {
-    icon: BookOpen,
-    title: 'Career Development',
-    description: 'Comprehensive support for internships, job placement, and professional skill development.',
-    details: 'From resume workshops to networking events, we prepare students for successful career transitions.'
-  },
-  {
-    icon: Users,
-    title: 'Student Support Services',
-    description: 'Holistic support including mental health counseling, disability services, and peer mentoring.',
-    details: 'A comprehensive support network ensuring student well-being and academic success.'
+    icon: Lightbulb,
+    title: 'Our vision',
+    description: 'To be an academic institution valued for the development of professionals with critical thinking abilities and moral character.',
+    details: 'We aim to inspire students to achieve their full potential by fostering an environment of academic excellence, ethical leadership, and lifelong learning.'
   },
   {
     icon: Library,
-    title: 'Research Resources',
-    description: 'Advanced research facilities, digital databases, and academic research support.',
-    details: 'State-of-the-art research centers and expert librarians supporting undergraduate and graduate research.'
+    title: 'Core Values',
+    description: 'COMPASSION <-> JUSTICE <-> FAITHFULNESS ONENESS <-> EXCELLENCE',
+    details: 'Our core values guide every aspect of our institution, ensuring that we nurture a community of integrity, inclusivity, and dedication to service.'
   },
   {
-    icon: Laptop,
-    title: 'Technology Support',
-    description: 'IT services, computer labs, and digital learning resources.',
-    details: 'Cutting-edge technology access, software support, and digital learning platforms.'
+    icon: GraduationCap,
+    title: 'Our mission',
+    description: 'Methodist Health Training Institute exists to develop competent mission-minded health professionals for compassionate service.',
+    details: 'Through rigorous training, mentorship, and a commitment to holistic education, we prepare students to make meaningful contributions to the healthcare field and society.'
   },
-  {
-    icon: Lightbulb,
-    title: 'Innovation Center',
-    description: 'Entrepreneurship programs, startup incubation, and interdisciplinary innovation labs.',
-    details: 'Bridging academic knowledge with real-world innovation through collaborative research.'
-  }
+  // {
+  //   icon: Library,
+  //   title: 'Research Resources',
+  //   description: 'Advanced research facilities, digital databases, and academic research support.',
+  //   details: 'State-of-the-art research centers and expert librarians supporting undergraduate and graduate research.'
+  // },
+  // {
+  //   icon: Laptop,
+  //   title: 'Technology Support',
+  //   description: 'IT services, computer labs, and digital learning resources.',
+  //   details: 'Cutting-edge technology access, software support, and digital learning platforms.'
+  // },
+  // {
+  //   icon: Lightbulb,
+  //   title: 'Innovation Center',
+  //   description: 'Entrepreneurship programs, startup incubation, and interdisciplinary innovation labs.',
+  //   details: 'Bridging academic knowledge with real-world innovation through collaborative research.'
+  // }
 ]
 </script>
 

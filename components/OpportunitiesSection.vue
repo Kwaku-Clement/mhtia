@@ -10,24 +10,28 @@
           :enter="{ opacity: 1, x: 0, transition: { duration: 800 } }"
         >
           <span 
-            class="text-sm text-primary font-bold inline-block transform transition-all duration-300 
+            class="text-sm text-red-500 font-bold inline-block transform transition-all duration-300 
                    hover:scale-105"
           >
-            ACADEMIC OPPORTUNITIES
+          TECHNOLOGY & INNOVATION
           </span>
           
           <h3 
             class="text-3xl font-bold mt-4 mb-4 transform transition-all duration-300 
                    hover:text-primary"
           >
-            Research Assistant Positions
+          Empowering students through innovation    
           </h3>
           
           <p class="text-gray-600 mb-6 leading-relaxed">
-            Join our cutting-edge research teams and contribute to groundbreaking studies. 
-            We're seeking passionate graduate students for Research Assistant roles across various 
-            departments. This is your chance to work alongside renowned faculty, gain invaluable 
-            experience, and make a real impact in your field of study.
+            We are dedicated to nurturing the next generation of healthcare professionals. 
+            We offer comprehensive programs that combine theoretical knowledge with practical, hands-on training to prepare 
+            students for real-world challenges. Our curriculum is designed to address the unique healthcare needs of our 
+            communities, focusing on areas such as nursing, midwifery, public health, and medical technology. 
+            With access to modern facilities, experienced instructors, and a supportive learning environment, 
+            students are empowered to excel in their chosen fields. Join us to make a difference in the lives of others, 
+            contribute to the improvement of healthcare systems, and become a part of a mission to build a healthier future 
+            for Ghana and beyond.
           </p>
           
           <a 
@@ -36,7 +40,7 @@
                    transform transition-all duration-300 hover:bg-primary-dark hover:scale-105 
                    active:scale-95 group shadow-md hover:shadow-lg"
           >
-            Explore Positions
+            Explore Positions -&gt;
             <Icon 
               name="heroicons:arrow-right"
               class="ml-2 w-5 h-5 transform transition-transform duration-300 group-hover:translate-x-1"
@@ -53,7 +57,7 @@
         >
           <div class="relative overflow-hidden rounded-2xl shadow-xl group">
             <img
-              src="/images/forklift.jpg"
+              src="/images/opoprtunities-1.png"
               alt="Students in research lab"
               class="w-full h-[300px] lg:h-[400px] object-cover transform transition-all duration-500 
                      group-hover:scale-105"
@@ -63,7 +67,7 @@
                      group-hover:opacity-100 transition-opacity duration-300"
             >
               <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <h4 class="text-xl font-bold mb-2">State-of-the-Art Facilities</h4>
+                <h4 class="text-xl font-bold mb-2">TECHNOLOGY & INNOVATION</h4>
                 <p class="text-sm">Access cutting-edge equipment and resources for your research</p>
               </div>
             </div>
