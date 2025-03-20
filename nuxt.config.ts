@@ -6,13 +6,13 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "MHTIA | Methodist Health Training Institute",
+      title: "MHTIA",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "description",
-          content: "MHTIA - Methodist Health Training Institute",
+          content: "MHTIA - Website for Methodist Health Training Institute",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

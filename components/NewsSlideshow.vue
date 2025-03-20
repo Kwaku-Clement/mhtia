@@ -11,9 +11,9 @@
         <!-- Image Section -->
         <div class="w-full lg:w-2/3 relative overflow-hidden group">
           <img
-            src="/images/newsslide-1.png"
+            src="/images/port-night.jpg"
             alt="Campus event"
-            class="w-full h-[450px] object-cover transform transition-transform duration-700 
+            class="w-full h-[400px] object-cover transform transition-transform duration-700 
                    group-hover:scale-105"
           />
           <!-- Overlay gradient -->
@@ -29,7 +29,7 @@
                  transform transition-all duration-300"
         >
           <span 
-            class="text-sm text-red-500 font-bold tracking-wider mb-2 
+            class="text-sm text-primary font-bold tracking-wider mb-2 
                    transform transition-all duration-300 hover:text-primary-dark"
             v-motion
             :initial="{ opacity: 0, x: -20 }"
@@ -67,7 +67,7 @@
             :initial="{ opacity: 0, x: -20 }"
             :enter="{ opacity: 1, x: 0, transition: { delay: 800, duration: 600 } }"
           >
-            Read Full Story -->
+            Read Full Story 
             <Icon 
               name="heroicons:arrow-right"
               class="w-5 h-5 ml-2 transform transition-transform duration-300 

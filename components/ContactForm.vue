@@ -8,34 +8,36 @@
         <!-- College Information Sections -->
         <div class="space-y-8">
           <div class="border-l-4 border-blue-500 pl-4">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Nursing and Midwifery</h3>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Academic Excellence</h3>
             <p class="text-gray-600">
-              Our programs in Nursing and Midwifery provide hands-on training and theoretical knowledge 
-              to prepare students for successful careers in healthcare, with a focus on patient care and ethics.
+              Our institution offers cutting-edge programs in Computer Science, Engineering, 
+              Business Administration, and Liberal Arts with a focus on practical experience 
+              and industry collaboration.
             </p>
           </div>
 
           <div class="border-l-4 border-green-500 pl-4">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Medical Laboratory Technology</h3>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Student Life</h3>
             <p class="text-gray-600">
-              Gain expertise in diagnostic techniques and laboratory procedures through our comprehensive 
-              Medical Laboratory Technology courses, designed to meet global healthcare standards.
+              Engage in a vibrant campus community with over 50+ student organizations, 
+              state-of-the-art facilities, and numerous opportunities for personal growth 
+              and leadership development.
             </p>
           </div>
 
           <div class="border-l-4 border-purple-500 pl-4">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Pharmacy Technician Training</h3>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Career Support</h3>
             <p class="text-gray-600">
-              Equip yourself with the skills needed to support pharmacists in delivering quality healthcare 
-              services, including medication preparation and patient counseling.
+              Access comprehensive career services including internship placements, 
+              job fairs, resume workshops, and networking events with industry leaders.
             </p>
           </div>
 
           <div class="border-l-4 border-yellow-500 pl-4">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Community Health and Development</h3>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Research Opportunities</h3>
             <p class="text-gray-600">
-              Learn to address public health challenges and promote wellness in communities through our 
-              specialized training in Community Health and Development.
+              Participate in groundbreaking research projects alongside distinguished faculty 
+              members across various disciplines and contribute to innovative solutions.
             </p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-blue-950 text-white">
+  <footer class="bg-blue-600 text-white">
     <div class="container mx-auto px-4 py-12">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Company Info -->
@@ -27,18 +27,10 @@
         <div>
           <h4 class="text-lg font-bold mb-4">Contact Us</h4>
           <address class="not-italic text-white/80 space-y-2">
-            <p>Afosu Abrem</p>
-            <p>Central Region, Ghana</p>
-            <p>Phone:  0500228292 / 0552297928</p>
-            <p>
-              Email: 
-              <a 
-              href="mailto:mhtiamoh@mhtia.edu.gh" 
-              class="text-white/80 hover:text-white transition-colors"
-              >
-              mhtiamoh@mhtia.edu.gh
-              </a>
-            </p>
+            <p>123 Business Street</p>
+            <p>City, Country</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Email: info@example.com</p>
           </address>
         </div>
 
@@ -81,7 +73,7 @@
       <div class="mt-12 pt-8 border-t border-white/20">
         <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p class="text-white/60 text-sm">
-            &copy; {{ new Date().getFullYear() }} MHTIA, All Rights Reserved.
+            &copy; {{ new Date().getFullYear() }} Your Company. All rights reserved.
           </p>
           <div class="flex space-x-6">
             <NuxtLink

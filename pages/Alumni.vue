@@ -1,47 +1,37 @@
 <template>
-  <div class="bg-gray-50 min-h-screen">
-    <!-- Hero Section -->
-    <section class="bg-blue-950 text-white py-16 animate-fade-in">
-      <div class="container mx-auto px-4">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-slide-down">Alumni Network</h1>
-        <p class="text-xl text-yellow-500 md:text-2xl max-w-3xl animate-slide-up">
-          Join our global community of graduates making a difference in the world.
-        </p>
-      </div>
-    </section>
-
-    <!-- Main Content -->
-    <section class="container mx-auto px-4 py-12">
-      <!-- Alumni Spotlight -->
-      <div class="mb-16 animate-fade-in">
-        <h2 class="text-3xl font-bold mb-8 text-red-900 border-b pb-2">Alumni Spotlight</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 self-center">
-
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 animate-slide-in-left">
-            <div class="h-64 bg-gray-300">
-              <img src="/images/alumni01.jpg" alt="alumni" class="w-full h-[255px] p-1 object-cover transform transition-transform duration-700 
-                   group-hover:scale-105" />
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">MHTIA ALUMNI</h3>
-              <p class="text-gray-600 mb-3">Class of 2024 - General Healthcare</p>
-              <p class="mb-4">
-                When you graduate from Methodist Health Training Institute, you join a talented, polyvalent,Christ
-                minded and compassionate community.
-              </p>
-              <p class="mb-4">
-                We’re proud of our alumni-many of whom have gone on to make valuable contributions to society in
-                Ghanaian community and around the world.
-              </p>
-              <div class="flex space-x-2">
-                <span class="bg-blue-100 text-blue-950 text-xs px-2 py-1 rounded">Nurses</span>
-                <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Healthcare</span>
+    <div class="bg-gray-50 min-h-screen">
+      <!-- Hero Section -->
+      <section class="bg-blue-600 text-white py-16 animate-fade-in">
+        <div class="container mx-auto px-4">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 animate-slide-down">Alumni Network</h1>
+          <p class="text-xl md:text-2xl max-w-3xl animate-slide-up">
+            Join our global community of graduates making a difference in the world.
+          </p>
+        </div>
+      </section>
+  
+      <!-- Main Content -->
+      <section class="container mx-auto px-4 py-12">
+        <!-- Alumni Spotlight -->
+        <div class="mb-16 animate-fade-in">
+          <h2 class="text-3xl font-bold mb-8 text-blue-800 border-b pb-2">Alumni Spotlight</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 animate-slide-in-left">
+              <div class="h-64 bg-gray-300"></div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Dr. Sarah Johnson</h3>
+                <p class="text-gray-600 mb-3">Class of 2015 - Computer Science</p>
+                <p class="mb-4">
+                  Leading AI research at Google, Dr. Johnson has pioneered breakthroughs in machine learning algorithms that have transformed healthcare diagnostics.
+                </p>
+                <div class="flex space-x-2">
+                  <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Tech Leader</span>
+                  <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Innovator</span>
+                </div>
               </div>
             </div>
-          </div>
-
-          <!-- <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 animate-slide-in-left" style="animation-delay: 0.2s">
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 animate-slide-in-left" style="animation-delay: 0.2s">
               <div class="h-64 bg-gray-300"></div>
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2">Michael Chen</h3>
@@ -54,9 +44,9 @@
                   <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Sustainability</span>
                 </div>
               </div>
-            </div> -->
-
-          <!-- <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 animate-slide-in-left" style="animation-delay: 0.4s">
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 animate-slide-in-left" style="animation-delay: 0.4s">
               <div class="h-64 bg-gray-300"></div>
               <div class="p-6">
                 <h3 class="text-xl font-bold mb-2">Dr. Maya Patel</h3>
@@ -69,127 +59,111 @@
                   <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Humanitarian</span>
                 </div>
               </div>
-            </div> -->
-        </div>
-      </div>
-
-      <!-- Alumni Benefits -->
-      <div class="mb-16">
-        <h2 class="text-3xl font-bold mb-8 text-red-900 border-b pb-2 animate-fade-in">Alumni Benefits</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div
-        class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade-in-up">
-        <h3 class="text-xl font-bold mb-3 text-blue-700">Professional Growth</h3>
-        <p>
-          Connect with a vibrant network of nursing and healthcare professionals across Ghana and Africa. Participate in exclusive workshops and events to share knowledge, foster collaborations, and advance healthcare practices in the region.
-        </p>
-          </div>
-
-          <div
-        class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade-in-up"
-        style="animation-delay: 0.2s">
-        <h3 class="text-xl font-bold mb-3 text-blue-700">Career Development</h3>
-        <p>
-          Access specialized career counseling, job placement services, and mentorship programs tailored for nursing and healthcare professionals. Empower the next generation of healthcare leaders in Ghana and beyond through guidance and support.
-        </p>
-          </div>
-
-          <div
-        class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade-in-up"
-        style="animation-delay: 0.4s">
-        <h3 class="text-xl font-bold mb-3 text-blue-700">Lifelong Learning</h3>
-        <p>
-          Enjoy discounted access to advanced nursing and healthcare training programs, certifications, and seminars. Stay informed about the latest medical advancements and best practices to excel in your career within Ghana and Africa.
-        </p>
-          </div>
-
-          <div
-        class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade-in-up"
-        style="animation-delay: 0.6s">
-        <h3 class="text-xl font-bold mb-3 text-blue-700">Community Engagement</h3>
-        <p>
-          Contribute to impactful outreach programs and volunteer initiatives organized by Methodist Health Training Institute. Help improve healthcare access and outcomes in underserved communities across Ghana and Africa.
-        </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Upcoming Events -->
-      <div class="mb-16">
-        <h2 class="text-3xl font-bold mb-8 text-red-900 border-b pb-2 animate-fade-in">Upcoming Alumni Events</h2>
-        <div class="space-y-6">
-          <div
-            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-slide-in-right">
-            <div class="flex flex-col md:flex-row justify-between">
-              <div class="mb-4 md:mb-0">
-                <h3 class="text-xl font-bold mb-2">Annual Alumni Homecoming Weekend</h3>
-                <p class="text-gray-700 mb-3">
-                  Join us for a weekend of celebration, reconnection, and college spirit. Activities include campus
-                  tours, faculty lectures, and the homecoming football game.
-                </p>
-                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more &rarr;</a>
-              </div>
-              <div class="text-right">
-                <p class="text-gray-600 font-medium">October 15-17, 2025</p>
-                <p class="text-blue-700 font-bold mt-2">Main Campus</p>
-              </div>
             </div>
           </div>
-
-          <div
-            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-slide-in-right"
-            style="animation-delay: 0.2s">
-            <div class="flex flex-col md:flex-row justify-between">
-              <div class="mb-4 md:mb-0">
-                <h3 class="text-xl font-bold mb-2">Tech Industry Networking Night</h3>
-                <p class="text-gray-700 mb-3">
-                  Connect with alumni working in technology fields. Perfect opportunity for recent graduates and alumni
-                  looking to transition into tech.
-                </p>
-                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more &rarr;</a>
-              </div>
-              <div class="text-right">
-                <p class="text-gray-600 font-medium">April 22, 2025</p>
-                <p class="text-blue-700 font-bold mt-2">Virtual Event</p>
-              </div>
+        </div>
+        
+        <!-- Alumni Benefits -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold mb-8 text-blue-800 border-b pb-2 animate-fade-in">Alumni Benefits</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade-in-up">
+              <h3 class="text-xl font-bold mb-3 text-blue-700">Networking Opportunities</h3>
+              <p>
+                Access exclusive alumni events, both virtual and in-person, to connect with fellow graduates across industries. Our annual Alumni Gala brings together distinguished graduates from around the world.
+              </p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade-in-up" style="animation-delay: 0.2s">
+              <h3 class="text-xl font-bold mb-3 text-blue-700">Career Services</h3>
+              <p>
+                Lifetime access to our career counseling services, job board, and professional development workshops. Alumni can also access our exclusive mentorship program to guide current students.
+              </p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade-in-up" style="animation-delay: 0.4s">
+              <h3 class="text-xl font-bold mb-3 text-blue-700">Campus Resources</h3>
+              <p>
+                Continue using library resources, research databases, and campus facilities. Special discounted rates for continuing education programs and professional certificates.
+              </p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-fade-in-up" style="animation-delay: 0.6s">
+              <h3 class="text-xl font-bold mb-3 text-blue-700">Alumni Magazine</h3>
+              <p>
+                Receive our quarterly alumni magazine featuring success stories, campus updates, and opportunities to stay involved with your alma mater through donations and volunteer opportunities.
+              </p>
             </div>
           </div>
-
-          <div
-            class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-slide-in-right"
-            style="animation-delay: 0.4s">
-            <div class="flex flex-col md:flex-row justify-between">
-              <div class="mb-4 md:mb-0">
-                <h3 class="text-xl font-bold mb-2">Class of 2015 Ten-Year Reunion</h3>
-                <p class="text-gray-700 mb-3">
-                  Celebrate a decade since graduation with your classmates. The weekend includes a formal dinner, campus
-                  tours, and family-friendly activities.
-                </p>
-                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more &rarr;</a>
+        </div>
+        
+        <!-- Upcoming Events -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold mb-8 text-blue-800 border-b pb-2 animate-fade-in">Upcoming Alumni Events</h2>
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-slide-in-right">
+              <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-4 md:mb-0">
+                  <h3 class="text-xl font-bold mb-2">Annual Alumni Homecoming Weekend</h3>
+                  <p class="text-gray-700 mb-3">
+                    Join us for a weekend of celebration, reconnection, and college spirit. Activities include campus tours, faculty lectures, and the homecoming football game.
+                  </p>
+                  <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more &rarr;</a>
+                </div>
+                <div class="text-right">
+                  <p class="text-gray-600 font-medium">October 15-17, 2025</p>
+                  <p class="text-blue-700 font-bold mt-2">Main Campus</p>
+                </div>
               </div>
-              <div class="text-right">
-                <p class="text-gray-600 font-medium">June 5-7, 2025</p>
-                <p class="text-blue-700 font-bold mt-2">Alumni Center</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-slide-in-right" style="animation-delay: 0.2s">
+              <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-4 md:mb-0">
+                  <h3 class="text-xl font-bold mb-2">Tech Industry Networking Night</h3>
+                  <p class="text-gray-700 mb-3">
+                    Connect with alumni working in technology fields. Perfect opportunity for recent graduates and alumni looking to transition into tech.
+                  </p>
+                  <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more &rarr;</a>
+                </div>
+                <div class="text-right">
+                  <p class="text-gray-600 font-medium">April 22, 2025</p>
+                  <p class="text-blue-700 font-bold mt-2">Virtual Event</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 animate-slide-in-right" style="animation-delay: 0.4s">
+              <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-4 md:mb-0">
+                  <h3 class="text-xl font-bold mb-2">Class of 2015 Ten-Year Reunion</h3>
+                  <p class="text-gray-700 mb-3">
+                    Celebrate a decade since graduation with your classmates. The weekend includes a formal dinner, campus tours, and family-friendly activities.
+                  </p>
+                  <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Learn more &rarr;</a>
+                </div>
+                <div class="text-right">
+                  <p class="text-gray-600 font-medium">June 5-7, 2025</p>
+                  <p class="text-blue-700 font-bold mt-2">Alumni Center</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Call to Action -->
-      <div class="bg-yellow-600 text-white p-8 rounded-lg shadow-lg text-center animate-pulse-subtle">
-        <h2 class="text-3xl font-bold mb-4">Update Your Alumni Profile</h2>
-        <p class="text-xl mb-6 max-w-2xl mx-auto">
-          Keep your contact information up to date to stay connected with your alma mater and fellow alumni.
-        </p>
-        <button
-          class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold transition-all duration-300 hover:bg-blue-100 hover:shadow-lg transform hover:scale-105 active:scale-95 animate-bounce-subtle">
-          Access Alumni Portal
-        </button>
-      </div>
-    </section>
-  </div>
-</template>
+        
+        <!-- Call to Action -->
+        <div class="bg-blue-600 text-white p-8 rounded-lg shadow-lg text-center animate-pulse-subtle">
+          <h2 class="text-3xl font-bold mb-4">Update Your Alumni Profile</h2>
+          <p class="text-xl mb-6 max-w-2xl mx-auto">
+            Keep your contact information up to date to stay connected with your alma mater and fellow alumni.
+          </p>
+          <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold transition-all duration-300 hover:bg-blue-100 hover:shadow-lg transform hover:scale-105 active:scale-95 animate-bounce-subtle">
+            Access Alumni Portal
+          </button>
+        </div>
+      </section>
+    </div>
+  </template>
   
   <script setup>
   // You can add page-specific logic here if needed

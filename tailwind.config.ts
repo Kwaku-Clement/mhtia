@@ -13,7 +13,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FBAB13",
+        primary: "#1E2B7B",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
