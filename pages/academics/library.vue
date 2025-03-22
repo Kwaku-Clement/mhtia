@@ -12,7 +12,9 @@
             <p class="text-xl text-blue-100 mb-6">
               Your Gateway to Knowledge and Research Excellence
             </p>
-            <button class="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-300">
+            <button 
+              class="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-50 transition-colors duration-300"
+              @click="redirectToKoha">
               Search Catalog
             </button>
           </div>
@@ -35,8 +37,10 @@
           <div class="text-3xl text-blue-600 mb-4">{{ action.icon }}</div>
           <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ action.title }}</h3>
           <p class="text-gray-600 mb-4">{{ action.description }}</p>
-          <button class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300">
-            Learn More →
+          <button 
+            class="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300"
+            @click="redirectToKoha">
+            Access Catalog →
           </button>
         </div>
       </div>
@@ -115,6 +119,11 @@ const quickActions = ref([
     icon: '💻',
     title: 'Online Resources',
     description: 'Access our digital library and research databases remotely.'
+  },
+  {
+    icon: '🔍',
+    title: 'Library Catalog',
+    description: 'Search and access the library catalog using Koha.'
   }
 ])
 
@@ -161,6 +170,10 @@ const featuredResources = ref([
     description: 'Collaborative learning spaces'
   }
 ])
+
+const redirectToKoha = () => {
+  window.open('http://195.35.8.87:8000', '_blank');
+};
 </script>
 
 <style>
