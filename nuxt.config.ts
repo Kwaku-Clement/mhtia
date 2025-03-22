@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@nuxt/icon", "@pinia/nuxt", "@vueuse/nuxt"],
   css: ["~/assets/css/tailwind.css"],
 
+  plugins: ['~/types/motion.ts'], 
+
   app: {
     head: {
       title: "MHTIA | Methodist Health Training Institute",
