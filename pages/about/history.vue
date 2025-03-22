@@ -24,7 +24,11 @@
               <h3 class="text-xl font-semibold text-gray-900 mb-2">
                 {{ milestone.title }}
               </h3>
-              <p class="text-gray-600">{{ milestone.description }}</p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <li v-if="milestone.description1">{{ milestone.description1 }}</li>
+                <li v-if="milestone.description2">{{ milestone.description2 }}</li>
+                <li v-if="milestone.description3">{{ milestone.description3 }}</li>
+                </ul>
               <div
                 v-if="milestone.impact"
                 class="mt-4 p-3 bg-blue-50 rounded-lg"
@@ -46,22 +50,39 @@ import AboutTabs from '~/components/tabs/AboutTabs.vue'
 
 const milestones = ref([
   {
-    year: '1950',
-    title: 'College Founded',
-    description: 'Established with a mission to provide quality education.',
-    impact: 'Enrolled 500 students in the first year'
+    year: '2014',
+    title: 'Founded by Nana Kwadwo Attefah, originally named Nursing and Midwifery Training College-Afosu.',
+    description1: 'Accredited by the Nursing and Midwifery Council of Ghana (N&MC).',
+    description2: 'Started with a two-year Nurse Assistant Clinical (RNAC) programme.',
+    description3: 'Introduced Post Basic Midwifery the following year.',
+    impact: 'Laid the foundation for quality nursing and midwifery education in the region.'
   },
   {
-    year: '1975',
-    title: 'Expansion of Campus',
-    description: 'Added new buildings and facilities to accommodate growth.',
-    impact: 'Increased student capacity by 2000'
+    year: '2018',
+    title: 'Gained accreditation from the Ghana Tertiary Education Council (GTEC).',
+    description1: 'Began offering three-year diploma programmes in Registered General Nursing (RGN) and Registered Midwifery (RM).',
+    description2: 'Established University affiliation with the University for Development Studies (UDS), Tamale.',
+    impact: 'Expanded academic offerings and strengthened institutional credibility through university affiliation.'
   },
   {
-    year: '2000',
-    title: 'Introduction of Online Courses',
-    description: 'Launched online programs to reach a global audience.',
-    impact: 'Attracted 10,000 online learners'
+    year: '2019',
+    title: 'Acquired by the Methodist Church Ghana and renamed Methodist Health Training Institute (MHTI).',
+    description1: 'Became a Christian Health Association of Ghana (CHAG) member under the Ministry of Health.',
+    impact: 'Enhanced governance and operational support under the Methodist Church Ghana and CHAG.'
+  },
+  {
+    year: '2020',
+    title: 'Affiliation transitioned from UDS to Kwame Nkrumah University of Science and Technology (KNUST).',
+    description: 'Became a Christian Health Association of Ghana (CHAG) member under the Ministry of Health.',
+    impact: 'Strengthened academic partnerships and aligned with a prestigious university for improved educational standards.'
+  },
+  {
+    year: 'NOW',
+    title: 'Present day: Methodist Health Training Institute (MHTI).',
+    description1: 'Graduates are licensed by N&MC to practice in Ghana and beyond.',
+    description2: 'Operates under policies from the Methodist Church Ghana, Ministry of Health, CHAG, GTEC, N&MC, and KNUST.',
+    description3: 'Implements strategic resource allocation and operational expansion for long-term success.',
+    impact: 'Continues to produce competent healthcare professionals while adapting to evolving educational and healthcare needs.'
   }
 ])
 </script>

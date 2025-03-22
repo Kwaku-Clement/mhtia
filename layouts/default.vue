@@ -13,4 +13,3 @@ import NavBar from '~/components/NavBar.vue';
     <AppFooter />
   </div>
 </template>
-

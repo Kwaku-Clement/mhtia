@@ -53,7 +53,7 @@ const tabs = [
   { name: 'Overview', path: '/admissions/overview' },
   { name: 'Certificate', path: '/admissions/certificate' },
   { name: 'Diploma', path: '/admissions/diploma' },
-  { name: 'Undergraduate', path: '/admissions/undergraduate' },
-  { name: 'International', path: '/admissions/international' },
+  // { name: 'Undergraduate', path: '/admissions/undergraduate' },
+  // { name: 'International', path: '/admissions/international' },
 ]
 </script>

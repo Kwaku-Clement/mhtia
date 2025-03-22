@@ -106,10 +106,10 @@ const newsletterEmail = ref('')
 
 const quickLinks = [
   { label: 'Home', path: '/' },
-  { label: 'About', path: '/about' },
-  { label: 'Services', path: '/services' },
-  { label: 'News', path: '/news' },
-  { label: 'Contact', path: '/contact' }
+  { label: 'About', path: '/about/overview' },
+  { label: 'Admissions', path: '/admissions/overview' },
+  { label: 'Academics', path: '/academics/overview' },
+  { label: 'News', path: '/news/overview' }
 ]
 
 const socialLinks = [

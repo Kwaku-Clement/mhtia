@@ -15,6 +15,7 @@
             ? 'bg-blue-600 text-white' 
             : 'bg-white text-gray-800 hover:bg-blue-100'"
         >
+        
           <div class="flex flex-col items-center text-center">
             <component 
               :is="service.icon" 
@@ -24,6 +25,28 @@
             <h3 class="text-xl font-bold mb-4">
               {{ service.title }}
             </h3>
+            
+            <div 
+              v-if="index === 1" 
+              class="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-2 rounded-lg"
+            >
+              <div class="text-center">
+                <span class="block text-sm font-bold text-cyan-600">COMPASSION</span>
+              </div>
+              <div class="text-center">
+                <span class="block text-sm font-bold text-green-600">JUSTICE</span>
+              </div>
+              <div class="text-center">
+                <span class="block text-sm font-bold text-purple-600">FAITHFULNESS</span>
+              </div>
+              <div class="text-center">
+                <span class="block text-sm font-bold text-yellow-600">ONENESS</span>
+              </div>
+              <div class="text-center">
+                <span class="block text-sm font-bold text-red-600">EXCELLENCE</span>
+              </div>
+            </div>
+
             <p 
               class="text-sm font-semibold mb-4"
               :class="activeService === index ? 'text-white/80' : 'text-gray-600'"
@@ -49,11 +72,11 @@
 import { ref } from 'vue'
 import { 
   GraduationCap, 
+  Library, 
+  Lightbulb, 
   BookOpen, 
   Users, 
-  Library, 
-  Laptop, 
-  Lightbulb 
+  Laptop
 } from 'lucide-vue-next'
 
 const activeService = ref(null)
@@ -68,7 +91,7 @@ const services = [
   {
     icon: Library,
     title: 'Core Values',
-    description: 'COMPASSION <-> JUSTICE <-> FAITHFULNESS ONENESS <-> EXCELLENCE',
+    description: '',
     details: 'Our core values guide every aspect of our institution, ensuring that we nurture a community of integrity, inclusivity, and dedication to service.'
   },
   {

@@ -221,8 +221,8 @@ const menuItems = [
       { label: 'Overview', path: '/about/overview' },
       { label: 'History', path: '/about/history' },
       { label: 'Mission and Vision', path: '/about/mission' },
-      { label: 'Leadership & Directorates', path: '/about/leadership' },
-      { label: 'Affiliates and Partners', path: '/about/partners' }
+      // { label: 'Leadership & Directorates', path: '/about/leadership' },
+      // { label: 'Affiliates and Partners', path: '/about/partners' }
     ]
   },
   {
@@ -231,8 +231,8 @@ const menuItems = [
       { label: 'Overview', path: '/admissions/overview' },
       { label: 'Certificate', path: '/admissions/certificate' },
       { label: 'Diploma', path: '/admissions/diploma' },
-      { label: 'Undergraduate', path: '/admissions/undergraduate' },
-      { label: 'International Admissions', path: '/admissions/international' },
+      // { label: 'Undergraduate', path: '/admissions/undergraduate' },
+      // { label: 'International Admissions', path: '/admissions/international' },
     ]
   },
   {
@@ -242,12 +242,12 @@ const menuItems = [
       { label: 'Colleges', path: '/academics/colleges' },
       { label: 'Programs', path: '/academics/programs' },
       { label: 'Academic Calendar', path: '/academics/calendar' },
-      { label: 'Library', path: '/academics/library' },
+      // { label: 'Library', path: '/academics/library' },
       { label: 'MHTIA Journals', path: '/academics/journals' }
     ]
   },
-  { label: 'Research', path: '/research/overview' },
+  // { label: 'Research', path: '/research/overview' },
   { label: 'News', path: '/news/overview' },
-  { label: 'Student Life', path: '/student_life/overview' }
+  // { label: 'Student Life', path: '/student_life/overview' }
 ]
 </script>

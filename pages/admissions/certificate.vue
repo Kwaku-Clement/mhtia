@@ -24,13 +24,28 @@
       </div>
       <div class="mt-8 bg-white rounded-lg shadow-md p-6 animate-fade-in">
         <h2 class="text-2xl font-semibold mb-4">Available Certificate Programs</h2>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div v-for="program in certificatePrograms" :key="program" class="bg-gray-100 rounded p-4 hover:bg-primary hover:text-white transition-colors duration-300">
-            {{ program }}
+        <div class="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
+          <div v-for="program in certificatePrograms" :key="program.name" class="bg-gray-100 rounded p-4 hover:bg-primary hover:text-white transition-colors duration-300 cursor-pointer"
+               @click="showProgramDetails(program)">
+            {{ program.name }}
           </div>
         </div>
       </div>
     </div>
+    
+    <!-- Program Details Modal -->
+    <Transition name="modal">
+      <div v-if="selectedProgram" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg p-6 max-w-md w-full">
+          <h3 class="text-2xl font-semibold mb-4">{{ selectedProgram.name }}</h3>
+          <p class="mb-4">{{ selectedProgram.description }}</p>
+          <p class="font-semibold">Duration: {{ selectedProgram.duration }}</p>
+          <button @click="selectedProgram = null" class="mt-4 bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition-colors">
+            Close
+          </button>
+        </div>
+      </div>
+    </Transition>
   </div>
 </template>
 
@@ -38,13 +53,19 @@
 import AdmissionTabs from '~/components/tabs/AdmissionTabs.vue'
 
 const certificatePrograms = [
-  'Information Technology',
-  'Business Administration',
-  'Hospitality Management',
-  'Graphic Design',
-  'Culinary Arts',
-  'Early Childhood Education'
-]
+  { 
+    name: 'Registered Nurse Assistant Clinicals (RNAC)', 
+    duration: '2 years', 
+    description: 'Prepares students to provide essential patient care and support healthcare teams in hospitals and clinics.' 
+  }
+];
+
+const selectedProgram = ref(null)
+
+const showProgramDetails = (program) => {
+  selectedProgram.value = program
+}
+
 </script>
 
 <style scoped>
@@ -73,5 +94,15 @@ const certificatePrograms = [
 @keyframes slideInRight {
   from { transform: translateX(50px); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
+}
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
 }
 </style>

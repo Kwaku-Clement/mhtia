@@ -54,7 +54,8 @@ const tabs = [
   { name: 'Colleges', path: '/academics/colleges' },
   { name: 'Programs', path: '/academics/programs' },
   { name: 'Calendar', path: '/academics/calendar' },
-  { name: 'Library', path: '/academics/library' },
+  // { name: 'e-Library', path: '/academics/library' },
+  // { name: 'e-Learning', path: '/academics/leasr' },
   { name: 'Journals', path: '/academics/journals' }
 ]
 </script>

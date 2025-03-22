@@ -6,58 +6,21 @@
         <h2 class="text-3xl font-bold text-gray-900 mb-8">Discover Our Educational Programs</h2>
         
         <!-- College Information Sections -->
-        <div class="space-y-8">
           <div class="border-l-4 border-blue-500 pl-4">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Nursing and Midwifery</h3>
             <p class="text-gray-600">
-              Our programs in Nursing and Midwifery provide hands-on training and theoretical knowledge 
-              to prepare students for successful careers in healthcare, with a focus on patient care and ethics.
+              Please feel free to reach out to us through our contact information provided below. Whether you have inquiries, feedback, or require assistance, our team is here to help. We value your communication and strive to provide prompt and helpful responses to all queries.
             </p>
           </div>
-
-          <div class="border-l-4 border-green-500 pl-4">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Medical Laboratory Technology</h3>
-            <p class="text-gray-600">
-              Gain expertise in diagnostic techniques and laboratory procedures through our comprehensive 
-              Medical Laboratory Technology courses, designed to meet global healthcare standards.
-            </p>
-          </div>
-
-          <div class="border-l-4 border-purple-500 pl-4">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Pharmacy Technician Training</h3>
-            <p class="text-gray-600">
-              Equip yourself with the skills needed to support pharmacists in delivering quality healthcare 
-              services, including medication preparation and patient counseling.
-            </p>
-          </div>
-
-          <div class="border-l-4 border-yellow-500 pl-4">
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">Community Health and Development</h3>
-            <p class="text-gray-600">
-              Learn to address public health challenges and promote wellness in communities through our 
-              specialized training in Community Health and Development.
-            </p>
-          </div>
-        </div>
-
-        <!-- Quick Stats -->
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 bg-gray-50 p-4 rounded-lg">
-          <div class="text-center">
-            <span class="block text-2xl font-bold text-blue-600">95%</span>
-            <span class="text-sm text-gray-600">Graduate Employment</span>
-          </div>
-          <div class="text-center">
-            <span class="block text-2xl font-bold text-green-600">200+</span>
-            <span class="text-sm text-gray-600">Course Options</span>
-          </div>
-          <div class="text-center">
-            <span class="block text-2xl font-bold text-purple-600">15:1</span>
-            <span class="text-sm text-gray-600">Student-Faculty Ratio</span>
-          </div>
-          <div class="text-center">
-            <span class="block text-2xl font-bold text-yellow-600">50+</span>
-            <span class="text-sm text-gray-600">Student Clubs</span>
-          </div>
+        <div class="mb-8">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.4194154846816!3d37.77492977975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f0e2c1b1%3A0x4a0b8f1b8b8b8b8b!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
 

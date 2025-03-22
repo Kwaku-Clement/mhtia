@@ -57,13 +57,22 @@ import { ref } from 'vue'
 import AdmissionTabs from '~/components/tabs/AdmissionTabs.vue'
 
 const diplomaPrograms = [
-  { name: 'Computer Science', duration: '2 years', description: 'Study the fundamentals of programming, algorithms, and data structures.' },
-  { name: 'Business Management', duration: '2 years', description: 'Learn key business concepts, management strategies, and organizational behavior.' },
-  { name: 'Electrical Engineering', duration: '3 years', description: 'Explore electrical systems, circuit design, and power distribution.' },
-  { name: 'Nursing', duration: '3 years', description: 'Gain practical skills and knowledge in patient care and medical procedures.' },
-  { name: 'Graphic Design', duration: '2 years', description: 'Develop creative skills in visual communication and digital design tools.' },
-  { name: 'Hospitality Management', duration: '2 years', description: 'Prepare for a career in the hospitality industry with practical and theoretical knowledge.' }
-]
+  { 
+    name: 'Registered General Nursing (RGN)', 
+    duration: '3 years', 
+    description: 'Comprehensive training in patient care, medical procedures, and healthcare ethics to prepare students for diverse clinical settings.' 
+  },
+  { 
+    name: 'Registered Midwifery (RM)', 
+    duration: '3 years', 
+    description: 'Specialized education in maternal and neonatal healthcare, focusing on safe delivery practices and women’s health.' 
+  },
+  { 
+    name: 'Post NAC/NAP Midwifery', 
+    duration: '2 years', 
+    description: 'Advanced midwifery training for Nurse Assistant Clinical (NAC) or Nurse Assistant Preventive (NAP) graduates to enhance maternal and newborn care services.' 
+  }
+];
 
 const selectedProgram = ref(null)
 

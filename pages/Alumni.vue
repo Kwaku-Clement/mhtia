@@ -17,29 +17,74 @@
         <h2 class="text-3xl font-bold mb-8 text-red-900 border-b pb-2">Alumni Spotlight</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 self-center">
 
-          <div
-            class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 animate-slide-in-left">
+            <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 animate-slide-in-left"
+            style="animation-delay: 0.2s">
             <div class="h-64 bg-gray-300">
               <img src="/images/alumni01.jpg" alt="alumni" class="w-full h-[255px] p-1 object-cover transform transition-transform duration-700 
-                   group-hover:scale-105" />
+               group-hover:scale-105" />
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">MHTIA ALUMNI</h3>
-              <p class="text-gray-600 mb-3">Class of 2024 - General Healthcare</p>
+              <h3 class="text-xl font-bold mb-2">Dr. Kwame Mensah</h3>
+              <p class="text-gray-600 mb-3">Class of 2015 - Public Health</p>
               <p class="mb-4">
-                When you graduate from Methodist Health Training Institute, you join a talented, polyvalent,Christ
-                minded and compassionate community.
+              Dr. Mensah has been instrumental in improving public health policies in Ghana, focusing on rural healthcare accessibility and disease prevention.
               </p>
               <p class="mb-4">
-                We’re proud of our alumni-many of whom have gone on to make valuable contributions to society in
-                Ghanaian community and around the world.
+              His dedication has earned him recognition as one of the leading public health advocates in Africa.
               </p>
               <div class="flex space-x-2">
-                <span class="bg-blue-100 text-blue-950 text-xs px-2 py-1 rounded">Nurses</span>
-                <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Healthcare</span>
+              <span class="bg-blue-100 text-blue-950 text-xs px-2 py-1 rounded">Public Health</span>
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Advocate</span>
               </div>
             </div>
-          </div>
+            </div>
+
+            <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 animate-slide-in-left"
+            style="animation-delay: 0.4s">
+            <div class="h-64 bg-gray-300">
+              <img src="/images/alumni01.jpg" alt="alumni" class="w-full h-[255px] p-1 object-cover transform transition-transform duration-700 
+               group-hover:scale-105" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Ama Osei</h3>
+              <p class="text-gray-600 mb-3">Class of 2018 - Nursing</p>
+              <p class="mb-4">
+              Ama has been a dedicated nurse working in underserved communities, providing essential healthcare services and education to families in need.
+              </p>
+              <p class="mb-4">
+              Her compassion and commitment have made a significant impact on improving healthcare outcomes in her region.
+              </p>
+              <div class="flex space-x-2">
+              <span class="bg-blue-100 text-blue-950 text-xs px-2 py-1 rounded">Nursing</span>
+              <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Community Care</span>
+              </div>
+            </div>
+            </div>
+
+            <div
+            class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 animate-slide-in-left"
+            style="animation-delay: 0.6s">
+            <div class="h-64 bg-gray-300">
+              <img src="/images/alumni01.jpg" alt="alumni" class="w-full h-[255px] p-1 object-cover transform transition-transform duration-700 
+               group-hover:scale-105" />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Kojo Asante</h3>
+              <p class="text-gray-600 mb-3">Class of 2012 - Midwife</p>
+              <p class="mb-4">
+              Kojo is a trailblazing Midwife who has developed innovative solutions for renewable energy in Africa, helping to bring electricity to remote areas.
+              </p>
+              <p class="mb-4">
+              His work has been recognized globally, earning him awards for his contributions to sustainable development.
+              </p>
+              <div class="flex space-x-2">
+              <span class="bg-blue-100 text-blue-950 text-xs px-2 py-1 rounded">Registered Midwifery</span>
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Midwife</span>
+              </div>
+            </div>
+            </div>
 
           <!-- <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1 animate-slide-in-left" style="animation-delay: 0.2s">
               <div class="h-64 bg-gray-300"></div>

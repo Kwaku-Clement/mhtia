@@ -9,18 +9,36 @@
   >
     <div class="container bg-blue-950 mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Desktop Navigation -->
-      <nav class="hidden md:flex space-x-6">
-        <NuxtLink
-          v-for="item in menuItems"
-          :key="item.path"
-          :to="item.path"
-          class="text-white hover:text-red-300 transition-all duration-500 ease-in-out transform hover:scale-105 active:scale-95
-                 relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5
-                 after:bg-red-300 after:transform after:scale-x-0 after:transition-transform
-                 after:duration-500 hover:after:scale-x-100"
-        >
-          {{ item.label }}
-        </NuxtLink>
+      <nav class="hidden md:flex w-full justify-between">
+        <!-- Left Side Links -->
+        <div class="flex space-x-6">
+          <NuxtLink
+        v-for="item in menuItems"
+        :key="item.path"
+        :to="item.path"
+        class="text-white hover:text-red-300 transition-all duration-500 ease-in-out transform hover:scale-105 active:scale-95
+         relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5
+         after:bg-red-300 after:transform after:scale-x-0 after:transition-transform
+         after:duration-500 hover:after:scale-x-100"
+          >
+        {{ item.label }}
+          </NuxtLink>
+        </div>
+
+        <!-- Right Side Links -->
+        <div class="flex space-x-6">
+          <NuxtLink
+        v-for="item in menuItemsRight"
+        :key="item.path"
+        :to="item.path"
+        class="text-white hover:text-red-300 transition-all duration-500 ease-in-out transform hover:scale-105 active:scale-95
+         relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5
+         after:bg-red-300 after:transform after:scale-x-0 after:transition-transform
+         after:duration-500 hover:after:scale-x-100"
+          >
+        {{ item.name }}
+          </NuxtLink>
+        </div>
       </nav>
 
       <!-- Mobile Menu Button -->
@@ -82,6 +100,12 @@ const menuItems = [
   { label: 'Student Portal', path: '/StudentPortal' },
   { label: 'Staff Portal', path: '/StaffPortal' },
   { label: 'Alumni', path: '/Alumni' },
-  { label: 'Careers', path: '/Careers' },
+  // { label: 'Careers', path: '/Careers' },
+];
+
+const menuItemsRight = [
+  
+  { name: 'e-Library', path: '/academics/library' },
+  { name: 'e-Learning', path: '/academics/leasr' },
 ];
 </script>
