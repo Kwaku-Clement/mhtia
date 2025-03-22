@@ -5,7 +5,11 @@ export default defineNuxtConfig({
   css: ["~/assets/css/tailwind.css"],
 
   plugins: ['~/types/motion.ts'], 
-
+  runtimeConfig: {
+    public: {
+      kohaUrl: process.env.NUXT_PUBLIC_KOHA_URL || 'http://195.35.8.87:8000',
+    },
+  },
   app: {
     head: {
       title: "MHTIA | Methodist Health Training Institute",

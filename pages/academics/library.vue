@@ -94,15 +94,24 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import AcademicsTabs from '~/components/tabs/AcademicsTabs.vue'
+import { ref } from 'vue';
+import AcademicsTabs from '~/components/tabs/AcademicsTabs.vue';
 
+// Access runtime config
+const { public: { kohaUrl } } = useRuntimeConfig();
+
+// Redirect function
+const redirectToKoha = () => {
+  window.open(kohaUrl, '_blank');
+};
+
+// Data
 const libraryStats = ref([
   { value: '100,000+', label: 'Books & Resources' },
   { value: '50+', label: 'Databases' },
   { value: '1,000+', label: 'Study Spaces' },
   { value: '24/7', label: 'Online Access' }
-])
+]);
 
 const quickActions = ref([
   {
@@ -125,14 +134,14 @@ const quickActions = ref([
     title: 'Library Catalog',
     description: 'Search and access the library catalog using Koha.'
   }
-])
+]);
 
 const hours = ref({
   'Monday - Friday': '8:00 AM - 10:00 PM',
   'Saturday': '9:00 AM - 6:00 PM',
   'Sunday': '10:00 AM - 4:00 PM',
   'Holidays': 'Check Schedule'
-})
+});
 
 const digitalResources = ref([
   {
@@ -150,7 +159,7 @@ const digitalResources = ref([
     name: 'E-Books',
     description: 'Thousands of e-books available for instant access'
   }
-])
+]);
 
 const featuredResources = ref([
   {
@@ -169,11 +178,7 @@ const featuredResources = ref([
     title: 'Learning Commons',
     description: 'Collaborative learning spaces'
   }
-])
-
-const redirectToKoha = () => {
-  window.open('http://195.35.8.87:8000', '_blank');
-};
+]);
 </script>
 
 <style>
